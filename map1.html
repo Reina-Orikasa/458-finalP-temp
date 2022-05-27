@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>US Median AQI 2010-2020</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/map1.css" rel="stylesheet" />
+    <script src="js/map1.js" async></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <div class="map-overlay" id="features">
+      <h1>US Median AQI 2020</h1>
+      <div id="pd">
+        <p>Hover over a county!</p>
+      </div>
+      <hr />
+      <p>
+        AQI Data -
+        <a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual"
+          >EPA</a
+        >
+      </p>
+      <p>
+        County data -
+        <a
+          href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html>"
+        >
+          US Census Bureau</a
+        >
+      </p>
+      <p>
+        The EPA defines the AQI median as "Half of daily AQI values during the
+        year were less than or equal to the median value, and half equaled or
+        exceeded it."
+      </p>
+
+      <p>
+        Undefined AQI represents no data from the EPA.
+      </p>
+    </div>
+    <div class="map-overlay" id="legend">
+      <h3>AQI</h3>
+    </div>
+
+    <div id="map2"></div>
+    <div class="map-overlay" id="features2">
+      <h1>US Median AQI 2010</h1>
+      <div id="pd2">
+        <p>Hover over a county!</p>
+      </div>
+      <hr />
+      <p>
+        AQI Data -
+        <a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual"
+          >EPA</a
+        >
+      </p>
+      <p>
+        County data -
+        <a
+          href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html>"
+        >
+          US Census Bureau</a
+        >
+      </p>
+      <p>
+        The EPA defines the AQI median as "Half of daily AQI values during the
+        year were less than or equal to the median value, and half equaled or
+        exceeded it."
+      </p>
+      <p>
+        Undefined AQI represents no data from the EPA.
+      </p>
+    </div>
+    <div class="map-overlay" id="legend2">
+      <h3>AQI</h3>
+    </div>
+  </body>
+</html>
